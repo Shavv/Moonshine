@@ -1,0 +1,581 @@
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: ${project_dir}\scripts\instance_nth_nearest\instance_nth_nearest.gml
+Converted description /// @description  instance_nth_nearest(x,y,obj,n)/// @param x
+/// @param y
+/// @param obj
+/// @param n
+
+Converting GML script: ${project_dir}\scripts\count_selected\count_selected.gml
+Converted description /// @description count_selected()
+
+Converting GML script: ${project_dir}\scripts\select\select.gml
+Converted description /// @description select(true)/// @param true
+
+Converting GML script: ${project_dir}\scripts\instance_find_enemy\instance_find_enemy.gml
+Converted description /// @description instance_find_enemy(object)/// @param object
+
+Converting GML script: ${project_dir}\scripts\scr_shake_view\scr_shake_view.gml
+Converted builtin - line 3: view_xview+=-(argument0/2)+random(argument0 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (-(argument0/2)+random(argument0) )
+Converted builtin - line 4: view_yview+=-(argument0/2)+random(argument0 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (-(argument0/2)+random(argument0) )
+
+Converting GML script: ${project_dir}\scripts\light\light.gml
+Converted description /// @description light(x,y,size,color,flicker)/// @param x
+/// @param y
+/// @param size
+/// @param color
+/// @param flicker
+
+Converting GML script: ${project_dir}\scripts\light_object\light_object.gml
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\scripts\shadow_create\shadow_create.gml
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description shadow_create(slope,horizon_angle,shadow_angle,shadow_yscale,alpha)/// @param slope
+/// @param horizon_angle
+/// @param shadow_angle
+/// @param shadow_yscale
+/// @param alpha
+
+Converting GML script: ${project_dir}\scripts\shadow_create_surface\shadow_create_surface.gml
+Converted description /// @description shadow_create_surface(slope,horizon_angle,shadow_angle,alpha)/// @param slope
+/// @param horizon_angle
+/// @param shadow_angle
+/// @param alpha
+
+Converting GML script: ${project_dir}\scripts\shadow_init\shadow_init.gml
+Converted description /// @description obj player
+
+Converting GML script: ${project_dir}\scripts\shadow_init_ext\shadow_init_ext.gml
+Converted description /// @description shadow_init_ext()
+
+Converting GML script: ${project_dir}\scripts\draw_rectangle_ext\draw_rectangle_ext.gml
+Converted description /// @description draw_rectangle_ext(x,y,width,height,outline)/// @param x
+/// @param y
+/// @param width
+/// @param height
+/// @param outline
+
+Converting GML script: ${project_dir}\scripts\draw_minimap\draw_minimap.gml
+Converted builtin - line 40: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 40: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 40: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted description /// @description draw_minimap
+
+Converting GML script: ${project_dir}\scripts\draw_summary\draw_summary.gml
+Converted description /// @description draw_summary
+
+Converting GML script: ${project_dir}\scripts\draw_summary_square_info\draw_summary_square_info.gml
+Converted description /// @description draw_summary_square_info(number,maxnumber,row)/// @param number
+/// @param maxnumber
+/// @param row
+
+Converting GML script: ${project_dir}\scripts\mouse_on_ui\mouse_on_ui.gml
+Converted description /// @description mouse_on_ui()
+
+Converting GML script: ${project_dir}\scripts\mouse_on_ui_part_var\mouse_on_ui_part_var.gml
+Converted description /// @description mouse_on_ui_part_var(x,y,x2,y2,VarToCheckFor,NOTEQUALTO)/// @param x
+/// @param y
+/// @param x2
+/// @param y2
+/// @param VarToCheckFor
+/// @param NOTEQUALTO
+
+Converting GML script: ${project_dir}\scripts\mouse_on_ui_part\mouse_on_ui_part.gml
+Converted description /// @description mouse_on_ui_part(x,y,x2,y2)/// @param x
+/// @param y
+/// @param x2
+/// @param y2
+
+Converting GML script: ${project_dir}\scripts\draw_bar\draw_bar.gml
+Converted description /// @description draw_bar(x,y,width,height,value,maxvalue,color,backgroundcolor,outline)/// @param x
+/// @param y
+/// @param width
+/// @param height
+/// @param value
+/// @param maxvalue
+/// @param color
+/// @param backgroundcolor
+/// @param outline
+
+Converting GML script: ${project_dir}\scripts\set_image_step\set_image_step.gml
+Converted description /// @description set_image_step(image,speed)/// @param image
+/// @param speed
+
+Converting GML script: ${project_dir}\scripts\set_image_stop\set_image_stop.gml
+Converted description /// @description set_image_stop(image,speed)/// @param image
+/// @param speed
+
+Converting GML script: ${project_dir}\scripts\set_image_die_stop\set_image_die_stop.gml
+Converted description /// @description set_image_die_stop(image,speed)/// @param image
+/// @param speed
+
+Converting GML script: ${project_dir}\scripts\building_sprite\building_sprite.gml
+Converted description /// @description building_sprite()
+
+Converting GML script: ${project_dir}\scripts\outline\outline.gml
+Converted description /// @description outline(mousemask)/// @param mousemask
+
+Converting GML script: ${project_dir}\scripts\draw_sprite_effect\draw_sprite_effect.gml
+Converted description /// @description draw_sprite_effect()
+
+Converting GML script: ${project_dir}\scripts\set_position\set_position.gml
+Converted description /// @description set_position
+
+Converting GML script: ${project_dir}\scripts\dmg_done\dmg_done.gml
+Converted description /// @description dmg_done(instance,dmgvalue)/// @param instance
+/// @param dmgvalue
+
+Converting GML script: ${project_dir}\scripts\dmg_done_self\dmg_done_self.gml
+Converted description /// @description dmg_done_self(dmgvalue)/// @param dmgvalue
+
+Converting GML script: ${project_dir}\scripts\set_attack_melee_stop\set_attack_melee_stop.gml
+Converted description /// @description set_attack_melee_stop(image,speed,dmgframe,dmgvalue)/// @param image
+/// @param speed
+/// @param dmgframe
+/// @param dmgvalue
+
+Converting GML script: ${project_dir}\scripts\set_attack_melee\set_attack_melee.gml
+Converted description /// @description set_attack_melee(image,speed,dmgframe,dmgvalue)/// @param image
+/// @param speed
+/// @param dmgframe
+/// @param dmgvalue
+
+Converting GML script: ${project_dir}\scripts\set_attack_ranged_stop\set_attack_ranged_stop.gml
+Converted description /// @description set_attack_ranged_stop(image,speed,dmgframe,dmgvalue,instance,xinstance,yinstance)/// @param image
+/// @param speed
+/// @param dmgframe
+/// @param dmgvalue
+/// @param instance
+/// @param xinstance
+/// @param yinstance
+
+Converting GML script: ${project_dir}\scripts\set_attack_hitbox\set_attack_hitbox.gml
+Converted description /// @description set_attack_hitbox(image,speed,dmgframe,dmgvalue,instance,xinstance,yinstance)/// @param image
+/// @param speed
+/// @param dmgframe
+/// @param dmgvalue
+/// @param instance
+/// @param xinstance
+/// @param yinstance
+
+Converting GML script: ${project_dir}\scripts\stats_init\stats_init.gml
+Converted description /// @description stats_init(str,agi,int,sta,spi,movespeed,armor,magir,mass,attackrange,agrorange,attackcooldown)/// @param str
+/// @param agi
+/// @param int
+/// @param sta
+/// @param spi
+/// @param movespeed
+/// @param armor
+/// @param magir
+/// @param mass
+/// @param attackrange
+/// @param agrorange
+/// @param attackcooldown
+
+Converting GML script: ${project_dir}\scripts\stats_step\stats_step.gml
+Converted description /// @description stats_step()
+
+Converting GML script: ${project_dir}\scripts\stats_begin_step\stats_begin_step.gml
+Converted description /// @description stats_begin_step()
+
+Converting GML script: ${project_dir}\scripts\building_init\building_init.gml
+Converted description /// @description building_init(f_mhp,f_msp,armor,magir,f_mass,attack_distance,attack_cooldown)/// @param f_mhp
+/// @param f_msp
+/// @param armor
+/// @param magir
+/// @param f_mass
+/// @param attack_distance
+/// @param attack_cooldown
+
+Converting GML script: ${project_dir}\scripts\building_begin_step\building_begin_step.gml
+Converted description /// @description building_begin_step()
+
+Converting GML script: ${project_dir}\scripts\skill_init\skill_init.gml
+Converted description /// @description skill_init()
+
+Converting GML script: ${project_dir}\scripts\skill_draw\skill_draw.gml
+Converted description /// @description skill_draw()
+
+Font normal_font has been converted to font family Arial (Regular) - Font has been regenerated, small inconsistencies may occur
+!!! Font fnt_gms1 uses a font (Arial Black) not installed on this system - Font has NOT been regenerated
+Font fnt_gms2 has been converted to font family Verdana (Regular) - Font has been regenerated, small inconsistencies may occur
+Font fnt_gms3 has been converted to font family Verdana (Bold) - Font has been regenerated, small inconsistencies may occur
+Font UI_FPS has been converted to font family Arial (Regular) - Font has been regenerated, small inconsistencies may occur
+Font UI_unit_number has been converted to font family Adobe Hebrew (Regular) - Font has been regenerated, small inconsistencies may occur
+Font UI_font_name has been converted to font family Arial (Regular) - Font has been regenerated, small inconsistencies may occur
+Font UI_numbers has been converted to font family BatangChe (Regular) - Font has been regenerated, small inconsistencies may occur
+Converting GML script: ${project_dir}\objects\GAME\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\GAME\Alarm_11.gml
+Converted description /// @description game end
+
+Converting GML script: ${project_dir}\objects\GAME\Alarm_1.gml
+Converted description /// @description mouse hitbox timer
+
+Converting GML script: ${project_dir}\objects\GAME\Alarm_0.gml
+Converted description /// @description doubleclick timer
+
+Converting GML script: ${project_dir}\objects\GAME\Step_2.gml
+Converted description /// @description global.mouse
+
+Converting GML script: ${project_dir}\objects\GAME\Step_0.gml
+Converted description /// @description make rectangle
+
+Converting GML script: ${project_dir}\objects\GAME\Draw_64.gml
+Converted description /// @description UI 
+
+Converting GML script: ${project_dir}\objects\GAME\Draw_0.gml
+Converted description /// @description draw rectangle
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_123.gml
+Converted description /// @description reset room
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_100.gml
+Converted description /// @description create Amon demon
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_99.gml
+Converted description /// @description create violin demon
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_98.gml
+Converted description /// @description create test melee
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_97.gml
+Converted description /// @description create test archer
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_96.gml
+Converted description /// @description create test dummy
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_27.gml
+Converted description /// @description close game
+
+Converting GML script: ${project_dir}\objects\GAME\KeyPress_17.gml
+Converted description /// @description switch formation
+
+Converting GML script: ${project_dir}\objects\DISPLAY\Create_0.gml
+Converted description /// @description setting
+
+Converting GML script: ${project_dir}\objects\DISPLAY\Alarm_0.gml
+Converted description /// @description center
+
+Converting GML script: ${project_dir}\objects\DISPLAY\Step_0.gml
+Converted description /// @description Display properties
+
+Converting GML script: ${project_dir}\objects\DISPLAY\KeyPress_114.gml
+Converted description /// @description reset screen
+
+Converting GML script: ${project_dir}\objects\BACKGROUND\Draw_0.gml
+Converted description /// @description draw
+
+Converting object event to GML script: ${project_dir}\objects\UNIT\Create_0.gml
+Skipped action 1 as it applies to <undefined>
+
+Converting GML script: ${project_dir}\objects\UNIT\Alarm_11.gml
+Converted description /// @description death
+
+Converting GML script: ${project_dir}\objects\UNIT\Alarm_10.gml
+Converted description /// @description sync timer
+
+Converting GML script: ${project_dir}\objects\UNIT\Alarm_9.gml
+Converted description /// @description (sync) custom variables/// @param sync
+
+Converting GML script: ${project_dir}\objects\UNIT\Alarm_1.gml
+Converted description /// @description skill A cooldown
+
+Converting GML script: ${project_dir}\objects\UNIT\Alarm_0.gml
+Converted description /// @description basic attack
+
+Converting GML script: ${project_dir}\objects\UNIT\Step_2.gml
+Converted description /// @description stats
+
+Converting GML script: ${project_dir}\objects\UNIT\Step_1.gml
+Converted description /// @description sync
+
+Converting GML script: ${project_dir}\objects\UNIT\Step_0.gml
+Converted description /// @description START
+
+Converting GML script: ${project_dir}\objects\UNIT\Collision_606d84cb-9665-4ff9-815d-0cfc3e46cbb0.gml
+Converted description /// @description wall
+
+Converting GML script: ${project_dir}\objects\UNIT\Collision_3caca107-1e3f-4a6d-8f30-4d15ac98c33b.gml
+Converted description /// @description move with ship
+
+Converting GML script: ${project_dir}\objects\UNIT\Collision_1f92e77d-dde9-4c5c-bd25-6ce3b034914f.gml
+Converted description /// @description move outside
+
+Converting GML script: ${project_dir}\objects\UNIT\Collision_265f0de5-b377-49ba-9e59-6864adfa3f62.gml
+Converted description /// @description move outside
+
+Converting GML script: ${project_dir}\objects\UNIT\Other_7.gml
+Converted description /// @description animation end
+
+Converting GML script: ${project_dir}\objects\UNIT\Draw_0.gml
+Converted description /// @description draw
+
+Converting GML script: ${project_dir}\objects\BUILDING\Create_0.gml
+Converted description /// @description building
+
+Converting GML script: ${project_dir}\objects\BUILDING\Alarm_11.gml
+Converted description /// @description destruction
+
+Converting GML script: ${project_dir}\objects\BUILDING\Alarm_10.gml
+Converted description /// @description sync timer
+
+Converting GML script: ${project_dir}\objects\BUILDING\Alarm_9.gml
+Converted description /// @description sync custom variables
+
+Converting GML script: ${project_dir}\objects\BUILDING\Step_2.gml
+Converted description /// @description Sync
+
+Converting GML script: ${project_dir}\objects\BUILDING\Step_0.gml
+Converted description /// @description sprite and sync
+
+Converting GML script: ${project_dir}\objects\BUILDING\Draw_0.gml
+Converted description /// @description draw
+
+Converting GML script: ${project_dir}\objects\SOLID\Create_0.gml
+Converted description /// @description solid
+
+Converting GML script: ${project_dir}\objects\AIRSHIP\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\AIRSHIP\Step_2.gml
+Converted description /// @description move ship
+
+Converting GML script: ${project_dir}\objects\AIRSHIPWALL\Step_2.gml
+Converted description /// @description master follow
+
+Converting GML script: ${project_dir}\objects\CORPSE\Create_0.gml
+Converted description /// @description set dummy team
+
+Converting GML script: ${project_dir}\objects\CORPSE\Step_2.gml
+Converted description /// @description stop animation
+
+Converting GML script: ${project_dir}\objects\CORPSE\Step_0.gml
+Converted description /// @description set constant
+
+Converting GML script: ${project_dir}\objects\CORPSE\Draw_0.gml
+Converted description /// @description draw_set_color
+
+Converting GML script: ${project_dir}\objects\RUIN\Create_0.gml
+Converted description /// @description set dummy team
+
+Converting GML script: ${project_dir}\objects\RUIN\Step_2.gml
+Converted description /// @description stop animation
+
+Converting GML script: ${project_dir}\objects\RUIN\Step_0.gml
+Converted description /// @description set constant
+
+Converting GML script: ${project_dir}\objects\RUIN\Draw_0.gml
+Converted description /// @description draw_set_color
+
+Converting GML script: ${project_dir}\objects\unit_dummy\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_dummy\Step_0.gml
+Converted description /// @description sprite
+
+Converting GML script: ${project_dir}\objects\unit_dummy\Draw_0.gml
+Converted description /// @description draw test
+
+Converting GML script: ${project_dir}\objects\unit_angel_1\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_angel_1\Step_0.gml
+Converted description /// @description inherit event
+
+Converting GML script: ${project_dir}\objects\unit_angel_3\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_angel_3\Step_0.gml
+Converted description /// @description inherit event
+
+Converting GML script: ${project_dir}\objects\unit_demon_1\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_demon_1\Step_0.gml
+Converted description /// @description inherit event
+
+Converting GML script: ${project_dir}\objects\unit_demon_2\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_demon_2\Step_0.gml
+Converted description /// @description inherit event
+
+Converting GML script: ${project_dir}\objects\unit_demon_3\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_demon_3\Step_0.gml
+Converted description /// @description inherit event
+
+Converting GML script: ${project_dir}\objects\unit_demon_4\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_demon_4\Step_0.gml
+Converted description /// @description inherit event
+
+Converting GML script: ${project_dir}\objects\unit_angel_3_projectile\Alarm_0.gml
+Converted description /// @description destroy
+
+Converting GML script: ${project_dir}\objects\unit_angel_3_projectile\Step_0.gml
+Converted description /// @description move towards point
+
+Converting GML script: ${project_dir}\objects\unit_angel_3_projectile\Draw_0.gml
+Converted description /// @description draw_sprite
+
+Converting GML script: ${project_dir}\objects\unit_demon_1_projectile\Alarm_0.gml
+Converted description /// @description destroy
+
+Converting GML script: ${project_dir}\objects\unit_demon_1_projectile\Step_0.gml
+Converted description /// @description move towards point
+
+Converting GML script: ${project_dir}\objects\unit_demon_1_projectile\Draw_0.gml
+Converted description /// @description draw_sprite
+
+Converting GML script: ${project_dir}\objects\unit_demon_3_corpse_explosion\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\unit_demon_3_corpse_explosion\Alarm_0.gml
+Converted description /// @description destroy
+
+Converting GML script: ${project_dir}\objects\unit_demon_4_skill_a_projectile\Alarm_0.gml
+Converted description /// @description destroy
+
+Converting GML script: ${project_dir}\objects\unit_demon_4_skill_a_projectile\Step_0.gml
+Converted description /// @description step
+
+Converting GML script: ${project_dir}\objects\building_angel_1\Create_0.gml
+Converted description /// @description init
+
+Converting GML script: ${project_dir}\objects\MOUSE_HITBOX\Step_0.gml
+Converted description /// @description size and destroy
+
+Converting GML script: ${project_dir}\objects\obj_cam\Create_0.gml
+Converted description /// @description (full)screen and cam_move/// @param full
+
+Converting GML script: ${project_dir}\objects\obj_cam\Step_2.gml
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 2: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 2: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 3: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 3: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted description /// @description get not to close to room border
+
+Converting GML script: ${project_dir}\objects\obj_cam\Step_0.gml
+Converted builtin - line 41: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 20: view_xview = x-view_wview/2 -> __view_set( e__VW.XView, 0, x-view_wview/2 )
+Converted builtin - line 29: view_xview = x-view_wview/2 -> __view_set( e__VW.XView, 0, x-view_wview/2 )
+Converted builtin - line 35: view_xview = x-view_wview/2 -> __view_set( e__VW.XView, 0, x-view_wview/2 )
+Converted builtin - line 42: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 21: view_yview = y-view_hview/2 -> __view_set( e__VW.YView, 0, y-view_hview/2 )
+Converted builtin - line 30: view_yview = y-view_hview/2 -> __view_set( e__VW.YView, 0, y-view_hview/2 )
+Converted builtin - line 36: view_yview = y-view_hview/2 -> __view_set( e__VW.YView, 0, y-view_hview/2 )
+Converted builtin - line 41: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 5: view_wview=dw/global.zoomfactor -> __view_set( e__VW.WView, 0, dw/global.zoomfactor )
+Converted builtin - line 42: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 6: view_hview=dh/global.zoomfactor -> __view_set( e__VW.HView, 0, dh/global.zoomfactor )
+Converted description /// @description zoomfactor
+Converted builtin - line 41: view_xview[0] = median(0, __view_get( e__VW.XView, 0 ), room_width - __view_get( e__VW.WView, 0 -> __view_set( e__VW.XView, 0, median(0, __view_get( e__VW.XView, 0 ), room_width - __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_yview[0] = median(0, __view_get( e__VW.YView, 0 ), room_height - __view_get( e__VW.HView, 0 -> __view_set( e__VW.YView, 0, median(0, __view_get( e__VW.YView, 0 ), room_height - __view_get( e__VW.HView, 0 )
+Converted builtin - line 20: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 21: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_cam\KeyPress_89.gml
+Converted description /// @description switch cam stance
+
+Converting GML script: ${project_dir}\objects\obj_cam_other\Create_0.gml
+Converted description /// @description image alpha down
+
+Converting GML script: ${project_dir}\objects\obj_cam_mover\Step_2.gml
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 2: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 2: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 3: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 3: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted description /// @description get not to close to room border
+
+Converting GML script: ${project_dir}\objects\obj_cam_mover\Step_0.gml
+Converted description /// @description move
+
+Converting GML script: ${project_dir}\objects\LIGHTNING\Create_0.gml
+Converted builtin - line 7: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 7: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description light init
+
+Converting GML script: ${project_dir}\objects\LIGHTNING\Step_0.gml
+Converted description /// @description set alpha border
+
+Converting GML script: ${project_dir}\objects\LIGHTNING\Other_5.gml
+Converted description /// @description surface reset
+
+Converting GML script: ${project_dir}\objects\LIGHTNING\Other_4.gml
+Converted builtin - line 2: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 2: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description surface
+
+Converting GML script: ${project_dir}\objects\LIGHTNING\Other_3.gml
+Converted description /// @description surface reset
+
+Converting GML script: ${project_dir}\objects\LIGHTNING\Draw_0.gml
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 4: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description draw surface and light on targets
+
+Converting GML script: ${project_dir}\objects\SHADOW\Create_0.gml
+Converted builtin - line 9: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 9: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description shadow init
+
+Converting GML script: ${project_dir}\objects\SHADOW\Step_2.gml
+Converted builtin - line 12: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 12: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description surface and all shadows
+
+Converting GML script: ${project_dir}\objects\SHADOW\Other_5.gml
+Converted description /// @description free surface
+
+Converting GML script: ${project_dir}\objects\SHADOW\Other_3.gml
+Converted description /// @description free surface
+
+Converting GML script: ${project_dir}\objects\SHADOW\Draw_64.gml
+Converted description /// @description shadow testing
+
+Converting GML script: ${project_dir}\objects\SHADOW\Draw_0.gml
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 6: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description draw
+
+Game speed set to 60
+Added compatibility script 'd3d/d3d_set_fog.gml'
+Added compatibility script 'd3d/d3d_transform_add_translation.gml'
+Added compatibility script 'd3d/d3d_transform_set_identity.gml'
+Added compatibility script 'd3d/d3d_transform_set_rotation_x.gml'
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/room_set_view.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'd3d/__init_d3d.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

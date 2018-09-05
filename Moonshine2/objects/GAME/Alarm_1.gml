@@ -1,0 +1,2 @@
+/// @description mouse hitbox timer
+
