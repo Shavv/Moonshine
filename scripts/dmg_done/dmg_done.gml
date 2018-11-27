@@ -12,23 +12,23 @@ if instance_exists(argument0)
   insthp=inst.hp
  
   insthp-=dmgdealth
-  
-  inst.hp=insthp
-  inst.flash=true
-  
+   
   if inst.state!=0.9
   {
-   if inst.hp<=0
+   inst.hp=insthp
+   inst.flash=true
+  }
+  
+  if inst.hp<=0
+  {
+   if object_is_ancestor(object_index,UNIT)
    {
-    if object_is_ancestor(object_index,UNIT)
-    {
-     xp+=inst.level*5  
-    }
-     else
-    {
- 	with (master) {xp+=inst.level*5}   
-    }
+    xp+=inst.level*5  
    }
-  }  
+    else
+   {
+    with (master) {xp+=inst.level*5}   
+   }
+  } 
  }
 }
