@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "03bd047a-67e4-4944-bbda-3d48c1951128",
+            "Value": {
+                "id": "4ad834fc-5fa5-4dc2-abb3-84cba2bfe7bd",
+                "resourcePath": "sprites\\spr_demon_hero_1_skill_b_ice\\spr_demon_hero_1_skill_b_ice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "03e3f959-f2e7-407a-8e77-40c92a73e76f",
             "Value": {
                 "id": "fee6bace-979a-44cd-a256-aaf48e26c639",
@@ -204,6 +212,14 @@
                 "id": "df0e2362-953e-4e72-a121-bd09cd18e687",
                 "resourcePath": "sprites\\spr_demon_unit_5_idle\\spr_demon_unit_5_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "18c32513-c723-4f5a-9e9b-8da6f10c8743",
+            "Value": {
+                "id": "4e4120c6-d87e-4d29-9e5b-16d3283f3000",
+                "resourcePath": "objects\\obj_hero_demon_1_b_ice\\obj_hero_demon_1_b_ice.yy",
+                "resourceType": "GMObject"
             }
         },
         {

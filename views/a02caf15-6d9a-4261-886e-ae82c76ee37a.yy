@@ -20,7 +20,8 @@
         "0bcc63d6-def4-4107-b1e4-1ece906c32f3",
         "f6160875-03d1-4774-b590-165794f014b4",
         "8d0e6f5c-b6fe-4b71-baf5-2656e290198d",
-        "24877fed-53c0-49d1-9dd2-bb7c0599a729"
+        "24877fed-53c0-49d1-9dd2-bb7c0599a729",
+        "18c32513-c723-4f5a-9e9b-8da6f10c8743"
     ],
     "filterType": "GMObject",
     "folderName": "units",

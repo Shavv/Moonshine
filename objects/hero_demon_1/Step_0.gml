@@ -92,18 +92,18 @@ if selected=true
    {
 	if keyboard_check_released(ord("1")) or (global.mouse_skill=true and mouse_check_button_pressed(mb_left))
 	{
-     var xdis,ydis,radius,dir;
+     var xdis,ydis,dir;
 	 
 	 skilldir=point_direction(global.leader.x,global.leader.y,mouse_x,mouse_y)
 	 dir=point_direction(x,y,mouse_x,mouse_y)
 	 xdis=point_distance(x,y,mouse_x,mouse_y)
      ydis=point_distance(x,y,mouse_x,mouse_y)
-	 radius=100
 	 
-	 skillx=x+lengthdir_x(clamp(xdis,-radius,radius),dir)
-	 skilly=y+lengthdir_y(clamp(ydis,-radius,radius),dir)
+	 skillx=x+lengthdir_x(clamp(xdis,-skill_range[0],skill_range[0]),dir)
+	 skilly=y+lengthdir_y(clamp(ydis,-skill_range[0],skill_range[0]),dir)
 	 alarm[1]=skill_cooldown[0]
 	 skill[0]=true
+	 state=0.1
 	}   
    }
   }
@@ -115,7 +115,6 @@ if selected=true
 
 if skill[0]=true and state<1
 {
- state=0.1
  draw[0]=false
  
  
@@ -139,22 +138,22 @@ if skill[0]=true and state<1
   {
    if imageindexrounded>18 and imageindexrounded<40
    {
-	 if distance_to_point(skillx,skilly)>10 {move_towards_point(skillx,skilly,clamp((point_distance(x,y,skillx,skilly))/50,0,4))} else {move_towards_point(x,y,0)}   
+	 state=0.9
+	 if distance_to_point(skillx,skilly)>1 {move_towards_point(skillx,skilly,clamp((point_distance(x,y,skillx,skilly))/20,0.5,10))} else {move_towards_point(x,y,0)}   
    }
     else
    {
 	move_towards_point(x,y,0)   
    }
    
-   if imageindexrounded=9 and trigger[0]=false
+   if imageindexrounded=40 and trigger[0]=false
    {
-    trigger[0]=true
+    state=0.1
+	trigger[0]=true
     charge=false
-    //j=instance_create(x,y,unit_demon_4_skill_a_projectile)
-	//j.direction=skilldir
-    //j.image_xscale=image_xscale
-    //j.team=team
-    //j.dmg=str*3
+    j=instance_create(skillx,skilly,obj_hero_demon_1_b_ice)
+    j.team=team
+    j.dmg=str*3
    }
   }
  }   

@@ -16,20 +16,19 @@ if instance_exists(argument0)
   inst.hp=insthp
   inst.flash=true
   
-  
-  if inst.hp<=0
+  if inst.state!=0.9
   {
-   if object_is_ancestor(object_index,UNIT)
+   if inst.hp<=0
    {
-    xp+=inst.level*5  
+    if object_is_ancestor(object_index,UNIT)
+    {
+     xp+=inst.level*5  
+    }
+     else
+    {
+ 	with (master) {xp+=inst.level*5}   
+    }
    }
-    else
-   {
-	with (master) {xp+=inst.level*5}   
-   }
-  }
-  
-  
-  
+  }  
  }
 }
