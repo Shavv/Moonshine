@@ -84,13 +84,13 @@ if selected=true
 {
  if (!keyboard_check(vk_shift) and global.leader=id) or (keyboard_check(vk_shift) and global.leader.object_index=object_index)
  {
-  if alarm[1]=-1 //skill a cooldown timer
+  if alarm[4]=-1 //skill a cooldown timer
   {
-   if keyboard_check_pressed(ord("1"))  {draw[0]=true}
-   if mouse_check_button_pressed(mb_right) {draw[0]=false}
-   if state=0 and draw[0]=true
+   if keyboard_check_pressed(skill_button[4])  {draw[4]=true}
+   if mouse_check_button_pressed(mb_right) {draw[4]=false}
+   if state=0 and draw[4]=true
    {
-	if keyboard_check_released(ord("1")) or (global.mouse_skill=true and mouse_check_button_pressed(mb_left))
+	if keyboard_check_released(skill_button[4]) or (global.mouse_skill=true and mouse_check_button_pressed(mb_left))
 	{
      var xdis,ydis,dir;
 	 
@@ -99,10 +99,11 @@ if selected=true
 	 xdis=point_distance(x,y,mouse_x,mouse_y)
      ydis=point_distance(x,y,mouse_x,mouse_y)
 	 
-	 skillx=x+lengthdir_x(clamp(xdis,-skill_range[0],skill_range[0]),dir)
-	 skilly=y+lengthdir_y(clamp(ydis,-skill_range[0],skill_range[0]),dir)
-	 alarm[1]=skill_cooldown[0]
-	 skill[0]=true
+	 skillx=x+lengthdir_x(clamp(xdis,-skill_range[4],skill_range[4]),dir)
+	 skilly=y+lengthdir_y(clamp(ydis,-skill_range[4],skill_range[4]),dir)
+	 alarm[4]=skill_cooldown[4]
+	 skill[4]=true
+	 trigger[4]=false
 	 state=0.1
 	}   
    }
@@ -113,11 +114,9 @@ if selected=true
 
 
 
-if skill[0]=true and state<1
+if skill[4]=true and state<1
 {
- draw[0]=false
- 
- 
+ draw[4]=false
  ///nuke down like a ice maniac
  if  image_ignore!=spr_demon_hero_1_skill_b
  {
@@ -127,7 +126,7 @@ if skill[0]=true and state<1
   if sprite_index!=spr_demon_hero_1_skill_b
   {
    //spritestate="skill_a"
-   image_speed=1.4
+   image_speed=1.6
    sprite_index=spr_demon_hero_1_skill_b
    image_index=0
    if mouse_x>global.leader.x {image_xscale= 1}
@@ -138,7 +137,7 @@ if skill[0]=true and state<1
   {
    if imageindexrounded>18 and imageindexrounded<40
    {
-	 state=0.9
+	 state=0.99
 	 if distance_to_point(skillx,skilly)>1 {move_towards_point(skillx,skilly,clamp((point_distance(x,y,skillx,skilly))/20,0.5,10))} else {move_towards_point(x,y,0)}   
    }
     else
@@ -146,10 +145,9 @@ if skill[0]=true and state<1
 	move_towards_point(x,y,0)   
    }
    
-   if imageindexrounded=40 and trigger[0]=false
+   if imageindexrounded=40 and trigger[4]=false
    {
-    state=0.1
-	trigger[0]=true
+	trigger[4]=true
     charge=false
     j=instance_create(skillx,skilly,obj_hero_demon_1_b_ice)
     j.team=team
@@ -163,7 +161,7 @@ if skill[0]=true and state<1
  {
   image_index=image_number-1
   image_speed=0
-  skill[0]=false
+  skill[4]=false
   spritestate="idle"
   startx=x
   starty=y
@@ -175,7 +173,7 @@ if skill[0]=true and state<1
 
 if state!=0
 {
- draw[0]=false
+ draw[4]=false
 }
 
 

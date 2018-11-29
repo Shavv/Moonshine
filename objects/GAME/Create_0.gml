@@ -1,6 +1,13 @@
 /// @description init
 randomize()
 team=0
+
+//key configuration
+global.skill_button[1]=ord("1")
+global.skill_button[2]=ord("2")
+global.skill_button[3]=ord("3")
+global.skill_button[4]=ord("4")
+
 ///standard variables
 global.selected=false
 global.selected_units=0
@@ -39,7 +46,7 @@ inst=noone
 mouseinst=noone
 
 //position
-
+#region UI
 ///UI & UI positions
 UI=true
 
@@ -162,6 +169,8 @@ c_health=make_color_rgb(1, 203, 0)//(108, 252, 103)
 c_enemy=c_red
 c_friendly=make_color_rgb(254, 113, 0)
 c_mana=make_color_rgb(17, 139, 245)
+
+#endregion
 
 ///Skills
 skill_init()

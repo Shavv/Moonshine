@@ -33,16 +33,17 @@ if object_index=unit_demon_4
 
 if object_index=hero_demon_1
 {
- if draw[0]=true
+ if draw[4]=true
  {
   draw_set_color(sc)
   draw_set_alpha(1) 	
-  draw_circle(x,y,skill_range[0],1)
-  draw_circle(x,y,skill_range[0]-1,1)
+  draw_circle(x,y,skill_range[4],1)
+  draw_circle(x,y,skill_range[4]-1,1)
+  draw_circle(x,y,skill_range[4]+1,1)
   draw_set_color(sc)
-  draw_circle(x+lengthdir_x(clamp(xdis,-skill_range[0],skill_range[0]),dir),y+lengthdir_y(clamp(ydis,-skill_range[0],skill_range[0]),dir),skill_radius[0],1)
+  draw_circle(x+lengthdir_x(clamp(xdis,-skill_range[4],skill_range[4]),dir),y+lengthdir_y(clamp(ydis,-skill_range[4],skill_range[4]),dir),skill_radius[4],1)
   draw_set_alpha(0.3)
-  draw_circle(x+lengthdir_x(clamp(xdis,-skill_range[0],skill_range[0]),dir),y+lengthdir_y(clamp(ydis,-skill_range[0],skill_range[0]),dir),skill_radius[0],0)
+  draw_circle(x+lengthdir_x(clamp(xdis,-skill_range[4],skill_range[4]),dir),y+lengthdir_y(clamp(ydis,-skill_range[4],skill_range[4]),dir),skill_radius[4],0)
   //draw_circle(clamp(mouse_x,0,lengthdir_x(100,point_direction(x,y,mouse_x,y))),mouse_y,100,0)
  }
 }

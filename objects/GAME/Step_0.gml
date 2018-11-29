@@ -1,6 +1,4 @@
 /// @description Moving units and selecting units
-//lfps_step()
-
 if mouse_check_button_pressed(mb_left)
 {
  xx=mouse_x

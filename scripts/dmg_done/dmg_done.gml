@@ -13,7 +13,7 @@ if instance_exists(argument0)
  
   insthp-=dmgdealth
    
-  if inst.state!=0.9
+  if inst.state!=0.99
   {
    inst.hp=insthp
    inst.flash=true

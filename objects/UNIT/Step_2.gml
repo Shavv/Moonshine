@@ -5,15 +5,14 @@ stats_step()
 
 if global.leader=id
 {
- if  draw[0]=false and draw[0]=false 
- and draw[0]=false and draw[0]=false
+ if  draw[1]=false and draw[2]=false 
+ and draw[3]=false and draw[4]=false
  {
   if GAME.alarm[10]=-1 {GAME.alarm[10]=10}
  }
   else
  {
   global.mouse_skill=true
-  
  }
 }
 #endregion

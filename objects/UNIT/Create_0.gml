@@ -34,6 +34,7 @@ chase=true
 charge=false
 walk=true
 flash=false
+hit=id
 
 ///sprite and mask
 mask=asset_get_index(sprite_get_name(sprite_index)+"_hitbox")
@@ -43,35 +44,46 @@ spritestate="idle"
 image_ignore=mask_index
 
 //skills
+skill_button[1]=global.skill_button[1]
+skill_button[2]=global.skill_button[2]
+skill_button[3]=global.skill_button[3]
+skill_button[4]=global.skill_button[4]
+
 draw[0]=false
 draw[1]=false
 draw[2]=false
 draw[3]=false
+draw[4]=false
 
 skill[0]=false
 skill[1]=false
 skill[2]=false
 skill[3]=false
+skill[4]=false
 
 skill_type[0]="instant"
 skill_type[1]="instant"
 skill_type[2]="instant"
 skill_type[3]="instant"
+skill_type[4]="instant"
 
 skill_cooldown[0]=0
 skill_cooldown[1]=0
 skill_cooldown[2]=0
 skill_cooldown[3]=0
+skill_cooldown[4]=0
 
 skill_sprite[0]=spr_none
 skill_sprite[1]=spr_none
 skill_sprite[2]=spr_none
 skill_sprite[3]=spr_none
+skill_sprite[4]=spr_none
 
 trigger[0]=false
 trigger[1]=false
 trigger[2]=false
 trigger[3]=false
+trigger[4]=false
 
 ///begin sync timer
 alarm[10]=2

@@ -1879,6 +1879,14 @@
             }
         },
         {
+            "Key": "c17ac43c-2d02-4c25-91ff-793f7390246e",
+            "Value": {
+                "id": "59251666-da7d-4d1e-b855-9825e20d9221",
+                "resourcePath": "scripts\\dmg_get\\dmg_get.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c18affe8-0b22-4b7c-ba9c-194d4d2d2d2c",
             "Value": {
                 "id": "ac83fecb-6a3f-4829-8724-62573fba6095",
@@ -2492,6 +2500,7 @@
         "b2dc879a-2d81-492d-9824-783397ed1ffc",
         "879fc856-fc20-4821-8a27-8cc621cb59d8",
         "cf2f73d4-942c-491b-9892-7dabe013d4d5",
+        "c17ac43c-2d02-4c25-91ff-793f7390246e",
         "43c01898-7261-4c2c-9528-d59b0ce4fc9d",
         "5ba6f064-9d97-41a8-9e6e-fc892df26a1e",
         "1c4aa23e-2a3a-4fd7-8ac6-083546c8803c",

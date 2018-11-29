@@ -8,9 +8,9 @@ stats_init(8,5,1,4,1,1,0,0,1,20,100,150)
 
 
 //skill
-skill_cooldown[0]=200
-skill_radius[0]=85
-skill_range[0]=200
+skill_cooldown[4]=10*room_speed
+skill_radius[4]=85
+skill_range[4]=200
 
 ///image
 sprite="spr_demon_hero_1"

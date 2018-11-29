@@ -36,7 +36,8 @@ if instance_exists(targett)
  draw_set_halign(fa_middle)
  draw_set_valign(fa_middle)
  draw_set_color(c_white)
-  
+ 
+ ///draw mana and health
  draw_text(UI_x_healthbar+UI_width_bar/2,UI_y_healthbar+UI_height_bar/2,string_hash_to_newline(string(string(ceil(targett.hp))+string(" | ")+string(targett.f_mhp))))
  draw_text(UI_x_manabar+UI_width_bar/2,UI_y_manabar+UI_height_bar/2,string_hash_to_newline(string(string(ceil(targett.sp))+string(" | ")+string(targett.f_msp))))
  
@@ -61,23 +62,29 @@ if instance_exists(targett)
  //click on skill
  if mouse_check_button_pressed(mb_left) 
  {
-  if mouse_on_ui_part(UI_x_skill[0],UI_y_skill[0],UI_x_skill[0]+UI_width_skill,UI_y_skill[0]+UI_height_skill) {if targett.skill_type[0]="instant" {targett.draw[0]=true} if targett.skill_type[0]="toggle" {keyboard_key_press(ord("1")) keyboard_key_release(ord("1"))}}
-  if mouse_on_ui_part(UI_x_skill[1],UI_y_skill[1],UI_x_skill[1]+UI_width_skill,UI_y_skill[1]+UI_height_skill) {if targett.skill_type[1]="instant" {targett.draw[1]=true} if targett.skill_type[1]="toggle" {keyboard_key_press(ord("2")) keyboard_key_release(ord("2"))}}
-  if mouse_on_ui_part(UI_x_skill[2],UI_y_skill[2],UI_x_skill[2]+UI_width_skill,UI_y_skill[2]+UI_height_skill) {if targett.skill_type[2]="instant" {targett.draw[2]=true} if targett.skill_type[2]="toggle" {keyboard_key_press(ord("3")) keyboard_key_release(ord("3"))}}
-  if mouse_on_ui_part(UI_x_skill[3],UI_y_skill[3],UI_x_skill[3]+UI_width_skill,UI_y_skill[3]+UI_height_skill) {if targett.skill_type[3]="instant" {targett.draw[3]=true} if targett.skill_type[3]="toggle" {keyboard_key_press(ord("4")) keyboard_key_release(ord("4"))}}
+  if mouse_on_ui_part(UI_x_skill[0],UI_y_skill[0],UI_x_skill[0]+UI_width_skill,UI_y_skill[0]+UI_height_skill) {if targett.skill_type[1]="instant" {targett.draw[1]=true} if targett.skill_type[1]="toggle" {keyboard_key_press(global.skill_button[1]) keyboard_key_release(global.skill_button[1])}}
+  if mouse_on_ui_part(UI_x_skill[1],UI_y_skill[1],UI_x_skill[1]+UI_width_skill,UI_y_skill[1]+UI_height_skill) {if targett.skill_type[2]="instant" {targett.draw[2]=true} if targett.skill_type[2]="toggle" {keyboard_key_press(global.skill_button[2]) keyboard_key_release(global.skill_button[2])}}
+  if mouse_on_ui_part(UI_x_skill[2],UI_y_skill[2],UI_x_skill[2]+UI_width_skill,UI_y_skill[2]+UI_height_skill) {if targett.skill_type[3]="instant" {targett.draw[3]=true} if targett.skill_type[3]="toggle" {keyboard_key_press(global.skill_button[3]) keyboard_key_release(global.skill_button[3])}}
+  if mouse_on_ui_part(UI_x_skill[3],UI_y_skill[3],UI_x_skill[3]+UI_width_skill,UI_y_skill[3]+UI_height_skill) {if targett.skill_type[4]="instant" {targett.draw[4]=true} if targett.skill_type[4]="toggle" {keyboard_key_press(global.skill_button[4]) keyboard_key_release(global.skill_button[4])}}
  }
  
  ///show toggle skill
- if targett.skill[0]=true and targett.skill_type[0]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[0],UI_y_skill[0])}
- if targett.skill[1]=true and targett.skill_type[1]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[1],UI_y_skill[1])}
- if targett.skill[2]=true and targett.skill_type[2]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[2],UI_y_skill[2])}
- if targett.skill[3]=true and targett.skill_type[3]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[3],UI_y_skill[3])}
+ if targett.skill[1]=true and targett.skill_type[1]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[0],UI_y_skill[0])}
+ if targett.skill[2]=true and targett.skill_type[2]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[1],UI_y_skill[1])}
+ if targett.skill[3]=true and targett.skill_type[3]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[2],UI_y_skill[2])}
+ if targett.skill[4]=true and targett.skill_type[4]="toggle" {draw_sprite(spr_UI_toggle_skill,-1,UI_x_skill[3],UI_y_skill[3])}
 
  //draw skill timer cooldowns
  draw_set_alpha(0.3)
  draw_set_color(c_black)
  //draw cooldown rectangle
- if targett.alarm[1]>0 {draw_rectangle(UI_x_skill[0],UI_y_skill[0]+UI_height_skill,UI_x_skill[0]+UI_width_skill,(UI_y_skill[0]-(targett.alarm[1]/targett.skill_cooldown[0])*UI_height_skill)+UI_height_skill,0)}
+ if targett.alarm[1]>0 {draw_rectangle(UI_x_skill[0],UI_y_skill[0]+UI_height_skill,UI_x_skill[0]+UI_width_skill,(UI_y_skill[0]-(targett.alarm[1]/targett.skill_cooldown[1])*UI_height_skill)+UI_height_skill,0)}
+ if targett.alarm[2]>0 {draw_rectangle(UI_x_skill[1],UI_y_skill[1]+UI_height_skill,UI_x_skill[1]+UI_width_skill,(UI_y_skill[1]-(targett.alarm[2]/targett.skill_cooldown[2])*UI_height_skill)+UI_height_skill,0)}
+ if targett.alarm[3]>0 {draw_rectangle(UI_x_skill[2],UI_y_skill[2]+UI_height_skill,UI_x_skill[2]+UI_width_skill,(UI_y_skill[2]-(targett.alarm[3]/targett.skill_cooldown[3])*UI_height_skill)+UI_height_skill,0)}
+ if targett.alarm[4]>0 {draw_rectangle(UI_x_skill[3],UI_y_skill[3]+UI_height_skill,UI_x_skill[3]+UI_width_skill,(UI_y_skill[3]-(targett.alarm[4]/targett.skill_cooldown[4])*UI_height_skill)+UI_height_skill,0)}
+ 
+ 
+ 
  
  draw_set_alpha(1)
  draw_set_font(UI_numbers)
