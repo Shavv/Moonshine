@@ -38,7 +38,7 @@ if room=display_set
  //window_set_size(global.ideal_width*size,global.ideal_height*size)
  window_set_size(window_width,window_height)
  //window_set_fullscreen(1)
- surface_reset_target()
+ //surface_reset_target()
 }
 
 alarm[0]=10
